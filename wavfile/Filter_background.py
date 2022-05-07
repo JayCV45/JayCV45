@@ -60,3 +60,4 @@ with contextlib.closing(wave.open(fname,'rb')) as spf:
     wav_file.setparams((1, ampWidth, sampleRate, nFrames, spf.getcomptype(), spf.getcompname()))
     wav_file.writeframes(filtered.tobytes('C'))
     wav_file.close()
+    
